@@ -1,10 +1,12 @@
 {
-    "manifest_version": 3,
-    "name": "YouTube Timestamp Button",
-    "version": "1.0",
-    "permissions": ["activeTab", "scripting"],
-    "content_scripts": [{
-        "matches": ["https://www.youtube.com/*"],
-        "js": ["content.js"]
-    }]
+  "manifest_version": 3,
+  "name": "YouTube Timestamp Button",
+  "version": "1.0",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
 }
