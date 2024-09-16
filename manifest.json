@@ -1,7 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "YouTube Timestamp Button",
-  "version": "1.0",
+  "name": "YouTube Timestamp Button for Comments",
+  "description": "Quickly add YouTube timestamps to comments with a single click. No more switching between the comment section and video",
+  "version": "1.0.0",
   "permissions": ["scripting"],
   "content_scripts": [
     {
