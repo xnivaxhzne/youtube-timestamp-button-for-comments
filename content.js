@@ -108,15 +108,20 @@ const observer = new MutationObserver(() => {
   const nestedReplyComments = document.querySelectorAll(
     "#reply-dialog #creation-box #labelAndInputContainer"
   );
+  const commentsInEditMode = document.querySelectorAll(
+    "#edit-dialog #creation-box #labelAndInputContainer"
+  ); // Common for flat and nested comments.
+
   const placeholderReplyComment = document.querySelector("#placeholder-area");
   const replyComment = document.querySelector(
     "#creation-box #labelAndInputContainer"
   );
 
+  if (commentsInEditMode.length) {
+    commentsInEditMode.forEach((item) => addButton(item));
+  }
   if (nestedReplyComments.length) {
-    nestedReplyComments.forEach((nestedReplyComment) =>
-      addButton(nestedReplyComment)
-    );
+    nestedReplyComments.forEach((item) => addButton(item));
   } else if (replyComment) {
     addButton(replyComment);
   } else if (placeholderReplyComment) {
