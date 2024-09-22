@@ -58,7 +58,7 @@ const addButton = (container, isPlaceholder = false) => {
 const addStyles = (isDarkTheme) => {
   const style = document.createElement("style");
   const themeBasedFontColor = isDarkTheme ? "#fff" : "#000";
-  const themeBasedBgColor = isDarkTheme ? "#000" : "#fff";
+  const themeBasedBgColor = isDarkTheme ? "#0f0f0f" : "#fff";
   style.textContent = `
               .timestampButton {
                   background: transparent;
