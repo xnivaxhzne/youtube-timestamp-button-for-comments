@@ -3,7 +3,6 @@
   "name": "Timestamp Button for YouTube Comments",
   "description": "Quickly add timestamps to comments in YouTube videos",
   "version": "1.0.0",
-  "permissions": ["scripting"],
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],
